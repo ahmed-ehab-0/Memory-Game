@@ -1,0 +1,124 @@
+:root {
+  --main-color: #8bc34a;
+  --alt-color: #f44336;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.start-screen {
+  position: fixed;
+  background-color: #8bc34ae6;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.start-screen span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: var(--alt-color);
+  padding: 10px 15px;
+  border-radius: 7px;
+  font-size: 21px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.info {
+  position: relative;
+  left: calc(50% - 10px);
+  transform: translateX(-50%);
+  max-width: 580px;
+  border: 2px solid var(--main-color);
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.cards {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards.no-click {
+  pointer-events: none;
+}
+
+.cards .card {
+  height: 100px;
+  flex: 1 0 100px;
+  position: relative;
+  margin: 0 10px 20px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+
+.cards .card.flipped,
+.cards .card.match {
+  transform: rotateY(180deg);
+  pointer-events: none;
+}
+
+.cards .card .front,
+.cards .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: 5px solid var(--main-color);
+  backface-visibility: hidden;
+}
+
+.cards .card .front {
+  background-color: #333;
+  line-height: 100px;
+}
+
+.cards .card .front::before {
+  content: "!";
+  color: #fff;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.cards .card .back {
+  background-color: var(--alt-color);
+  transform: rotateY(180deg);
+}
+
+.cards .card .back img {
+  width: 60px;
+  margin-top: 15px;
+}
+
+.buttons {
+  max-width: 580px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.buttons div {
+  background-color: var(--main-color);
+  padding: 10px 15px;
+  border-radius: 7px;
+  color: #fff;
+  cursor: pointer;
+}

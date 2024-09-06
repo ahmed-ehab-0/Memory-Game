@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="start-screen">
+      <span>Start Game</span>
+    </div>
+    <div class="info">
+      <div class="name">Name: <span></span></div>
+      <div class="tries">Worng tries: <span></span></div>
+    </div>
+    <div class="cards">
+      <div class="card" data-name="angular">
+        <div class="front"></div>
+        <div class="back">
+          <img src="images/angular.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="angular">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/angular.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="css">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/css.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="css">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/css.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="vue">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/vue.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="vue">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/vue.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="node">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/node.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="node">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/node.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="python">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/python.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="python">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/python.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="react">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/react.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="react">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/react.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="mongodb">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/mongodb.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="mongodb">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/mongodb.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="github">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/github.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="github">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/github.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="html">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/html.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="html">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/html.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="sass">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/sass.png" alt="" />
+        </div>
+      </div>
+      <div class="card" data-name="sass">
+        <div class="front"></div>
+        <div class="back">
+          <img decoding="async" src="images/sass.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <div class="restart">Restart Game</div>
+      <div class="change">Change Name</div>
+    </div>
+    <audio id="song" src="audio/song.mp3" preload="auto" loop></audio>
+    <audio id="success" src="audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp3" preload="auto"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
